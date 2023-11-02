@@ -5,12 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/asset/resource/css/reset.css">
     <link rel="stylesheet" href="./dist/asset/resource/css/font.css">
+    <link rel="stylesheet" href="./dist/asset/resource/scss/main.css">
+    <link rel="stylesheet" href="./dist/asset/resource/scss/common.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="wrap">
-        <header></header>
+        <div class="headerWrap">
+        <header>
+            <a href="index.html"><img src="./dist/asset/resource/img/common/icon/logo_white.png" class="icon"></a>
+            <nav>
+                <a href="#">내차팔기</a>
+                <a href="#">내차사기</a>
+                <a href="#">기아 인증중고차 소개</a>
+                <a href="#">공지사항</a>
+                <a href="#">고객센터</a>
+                <a href="#">로그인</a>
+            </nav>
+        </header>
+    </div>
         <div class="container">
+            <div class="main-visual__item">
+
+
+                <div class="swiper-container" >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://cpo-cdn.kia.com/public/model/CVEV22SWP_EV6.png" alt="EV6"></div>
+                        <div class="swiper-slide"><img src="https://cpo-cdn.kia.com/public/model/GLSD22SWP_K8.png" alt="K8"></div>
+                        <div class="swiper-slide"><img src="https://cpo-cdn.kia.com/public/model/MQRV24SWP_SORENTO_PRESTIGE.png" alt="쏘렌토"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <button onclick="swiper.autoplay.start()">Play</button>
+                    <button onclick="swiper.autoplay.stop()">Stop</button>
+                </div>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        speed: 500,
+                        loop: true,
+                        centeredSlides: true,
+                        autoplay: {
+                            delay: 3000, // 3초 간격
+                            disableOnInteraction: false,
+                        },
+                        spaceBetween: 10, // 슬라이드 간의 간격을 20픽셀로 설정
+                        slidesPerView: 1,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                </script>
+                
+
+            </div>
             <!-- 
             <img src="https://cpo-cdn.kia.com/public/model/CVEV22SWP_EV6.png" alt="EV6">
             <img src="https://cpo-cdn.kia.com/public/model/GLSD22SWP_K8.png" alt="K8">

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Swiper Autoplay Toggle</title>
+    <style>
+        /* 슬라이드와 버튼 스타일 지정 */
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+        }
+
+        .toggle-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <!-- 슬라이드 이미지들 -->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://example.com/image1.jpg" alt="Image 1"></div>
+            <div class="swiper-slide"><img src="https://example.com/image2.jpg" alt="Image 2"></div>
+            <!-- ... 다른 슬라이드들 ... -->
+        </div>
+        <!-- 토글 버튼 -->
+        <button class="toggle-button" id="autoplay-toggle">정지</button>
+    </div>
+
+    <script>
+        // Swiper 인스턴스 생성
+        var swiper = new Swiper('.swiper-container', {
+            // 자동 재생 설정
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            // 다른 설정들...
+        });
+
+        // 버튼 요소 선택
+        var toggleButton = document.getElementById('autoplay-toggle');
+
+        // 버튼 클릭 이벤트 리스너 추가
+        toggleButton.addEventListener('click', function() {
+            // 자동 재생 상태 확인
+            if (swiper.autoplay.running) {
+                // 자동 재생 중지
+                swiper.autoplay.stop();
+                // 버튼 텍스트 변경
+                toggleButton.textContent = '시작';
+            } else {
+                // 자동 재생 시작
+                swiper.autoplay.start();
+                // 버튼 텍스트 변경
+                toggleButton.textContent = '정지';
+            }
+        });
+    </script>
+</body>
+</html>
