@@ -1,70 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <title>Swiper Autoplay Toggle</title>
+    <title>Document</title>
     <style>
-        /* 슬라이드와 버튼 스타일 지정 */
-        .swiper-container {
-            width: 100%;
-            height: 300px;
+        body {
+            margin: 0;
+            height: 300vh; /* 페이지 높이를 3배로 설정하여 스크롤 테스트를 위해 충분한 높이를 제공 */
         }
-
-        .toggle-button {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            padding: 10px;
-            background-color: white;
-            border: none;
-            cursor: pointer;
+        header {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            background: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            transition: all 0.3s ease-in-out; /* 부드러운 전환 효과 */
+        }
+        header.scrolled {
+            background: red;
+            color: yellow;
+        }
+        .logo {
+            width: 100px;
+            height: 30px;
+            background: url('/dist/asset/resource/img/common/icon/logo_white.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        header.scrolled .logo {
+            width: 100px;
+            height: 30px;
+            background: url('/dist/asset/resource/img/common/icon/logo_black.png');
         }
     </style>
 </head>
 <body>
-    <div class="swiper-container">
-        <!-- 슬라이드 이미지들 -->
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="https://example.com/image1.jpg" alt="Image 1"></div>
-            <div class="swiper-slide"><img src="https://example.com/image2.jpg" alt="Image 2"></div>
-            <!-- ... 다른 슬라이드들 ... -->
-        </div>
-        <!-- 토글 버튼 -->
-        <button class="toggle-button" id="autoplay-toggle">정지</button>
-    </div>
+    <header id="header">
+        <div class="logo"></div>
+    </header>
 
     <script>
-        // Swiper 인스턴스 생성
-        var swiper = new Swiper('.swiper-container', {
-            // 자동 재생 설정
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            // 다른 설정들...
-        });
-
-        // 버튼 요소 선택
-        var toggleButton = document.getElementById('autoplay-toggle');
-
-        // 버튼 클릭 이벤트 리스너 추가
-        toggleButton.addEventListener('click', function() {
-            // 자동 재생 상태 확인
-            if (swiper.autoplay.running) {
-                // 자동 재생 중지
-                swiper.autoplay.stop();
-                // 버튼 텍스트 변경
-                toggleButton.textContent = '시작';
+        window.onscroll = function() {
+            var header = document.getElementById('header');
+            if (window.scrollY >= 0.4 * window.innerHeight) {
+                header.classList.add('scrolled');
             } else {
-                // 자동 재생 시작
-                swiper.autoplay.start();
-                // 버튼 텍스트 변경
-                toggleButton.textContent = '정지';
+                header.classList.remove('scrolled');
             }
-        });
+        };
     </script>
 </body>
 </html>

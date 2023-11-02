@@ -5,6 +5,26 @@
     list-style: none;
     text-decoration: none;
 }
+#header.scrolled {
+    background: #676A6F;
+    header {
+        background: #676A6F;
+        .icon {
+            background-image: url('/dist/asset/resource/img/common/icon/logo_black.png');
+            padding: 23px 0 0 35px;
+            height: 48px;
+            
+        }
+        nav {
+            padding: 0 0 0 372px;
+            a {
+                color: black;
+                font-weight: 900;
+                margin: 0 0 0 25px;
+            }
+        }
+    }
+}
 .headerWrap {
     z-index: 999;
     position: fixed;
@@ -20,8 +40,14 @@
         height: 70px;
         line-height: 70px;
         .icon {
-            padding: 23px 0 0 35px;
-            height: 48px;
+            
+            background-image: url('/dist/asset/resource/img/common/icon/logo_white.png');
+            background-repeat: no-repeat;
+            object-fit: cover;
+            margin-top: 20px;
+            width: 100px;
+
+            
         }
         nav {
             padding: 0 0 0 372px;
