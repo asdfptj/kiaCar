@@ -6,9 +6,9 @@
     text-decoration: none;
 }
 #header.scrolled {
-    background-color: rgba(255, 255, 255, 0.288); /* 흰색 배경, 50% 투명도 */
+    background-color: white;
     z-index: 999;
-    transition: background-color 2s, opacity 2s, backdrop-filter 2s; /* 효과 전환 시간 */
+    transition: background-color 2s, opacity 2s, backdrop-filter 2s;
     header {
         .icon {
             background-image: url('/dist/asset/resource/img/common/icon/logo_black.png');

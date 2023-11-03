@@ -15,7 +15,7 @@
 .mainWrap {
     margin: 0 auto;
     width: 1200px;
-    height: 2000px;
+    height: 5000px;
     overflow-x: hidden; /* 추가 */
 }
 .main-visual__item {
@@ -80,4 +80,67 @@
     }
     
    
+}
+
+.container {
+    .recent-car {
+        margin: 260px 0 0 40px;
+        height: 730px;
+            .recent-title {
+                font-size: 30px;
+                font-weight: 600;
+            }
+        .recent-content {
+            width: 362px;
+            height: 466px;
+            background: #F5F5F6;
+            border-radius: 10px;
+            margin: 37px 0 0 0;
+            .recent-heart {
+                margin: -30px 0 0 262px;
+                width: 73.41px;
+                height: 40px;
+                background: #E9E9EC;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                p {
+                    margin: 0 0 0 5px;
+                }
+                .heart-icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .car-re {
+                margin: 38px 0 0 0;
+            }
+            .text- {
+                &1 {
+                    margin: 40px 0 0 25px;
+                    font-size: 23px;
+                    font-weight: bold;
+                }
+                &2 {
+                    margin: 20px 0 0 25px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                &3 {
+                    margin: 13px 0 0 25px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                &4 {
+                    margin: 13px 0 0 25px;
+                    font-size: 21px;
+                    font-weight: bold;
+                }
+            }
+            .car-re {
+                width: 362px;
+            }
+        }
+    }
 }
