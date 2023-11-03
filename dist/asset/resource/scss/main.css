@@ -7,8 +7,12 @@
 }
 
 .wrap {
+  height: 2360px;
+}
+
+.wrap2 {
   width: 100%;
-  height: 870px;
+  max-height: 870px;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, #1A2129 65%, #1A2129 100%);
 }
@@ -16,8 +20,8 @@
 .mainWrap {
   margin: 0 auto;
   width: 1200px;
-  height: 5000px;
-  overflow-x: hidden; /* 추가 */
+  overflow-x: hidden;
+  /* 추가 */
 }
 
 .main-visual__item .smioer-container {
@@ -29,8 +33,8 @@
 
 .swiper-slide img {
   margin: 165px 0 0 320px;
-  width: 830px; /* 변경 */
-  height: auto; /* 변경 */
+  width: 830px;
+  /* 변경 */
 }
 
 .car-introduce {
@@ -46,7 +50,7 @@
 .car-introduce .carIntroduce {
   margin: 20px 0 39px 0;
   font-size: 20px;
-  color: white;
+  color: #D6D7D9;
 }
 .car-introduce .carCheck {
   font-size: 16px;
@@ -67,8 +71,10 @@
   height: 1px;
 }
 .pageBtn .swiper-pagination-bullet {
-  width: 10px; /* 변경 */
-  height: 10px; /* 변경 */
+  width: 10px;
+  /* 변경 */
+  height: 10px;
+  /* 변경 */
 }
 .pageBtn .swiper-pagination {
   height: 10px;
@@ -78,25 +84,26 @@
   margin: 1.2px 0 0 0;
 }
 .pageBtn .swiper-container {
-  overflow: hidden; /* 추가 */
+  overflow: hidden;
+  /* 추가 */
 }
 
-.container .recent-car {
+.recent-car {
   margin: 260px 0 0 40px;
-  height: 730px;
+  height: 727px;
 }
-.container .recent-car .recent-title {
+.recent-car .recent-title {
   font-size: 30px;
   font-weight: 600;
 }
-.container .recent-car .recent-content {
+.recent-car .recent-content {
   width: 362px;
   height: 466px;
   background: #F5F5F6;
   border-radius: 10px;
   margin: 37px 0 0 0;
 }
-.container .recent-car .recent-content .recent-heart {
+.recent-car .recent-content .recent-heart {
   margin: -30px 0 0 262px;
   width: 73.41px;
   height: 40px;
@@ -106,36 +113,181 @@
   justify-content: center;
   border-radius: 30px;
 }
-.container .recent-car .recent-content .recent-heart p {
+.recent-car .recent-content .recent-heart p {
   margin: 0 0 0 5px;
 }
-.container .recent-car .recent-content .recent-heart .heart-icon {
+.recent-car .recent-content .recent-heart .heart-icon {
   width: 20px;
   height: 20px;
 }
-.container .recent-car .recent-content .car-re {
+.recent-car .recent-content .car-re {
   margin: 38px 0 0 0;
 }
-.container .recent-car .recent-content .text-1 {
+.recent-car .recent-content .text-1 {
   margin: 40px 0 0 25px;
   font-size: 23px;
   font-weight: bold;
 }
-.container .recent-car .recent-content .text-2 {
+.recent-car .recent-content .text-2 {
   margin: 20px 0 0 25px;
   font-size: 18px;
   font-weight: 500;
 }
-.container .recent-car .recent-content .text-3 {
+.recent-car .recent-content .text-3 {
   margin: 13px 0 0 25px;
   font-size: 18px;
   font-weight: 500;
 }
-.container .recent-car .recent-content .text-4 {
+.recent-car .recent-content .text-4 {
   margin: 13px 0 0 25px;
   font-size: 21px;
   font-weight: bold;
 }
-.container .recent-car .recent-content .car-re {
+.recent-car .recent-content .car-re {
   width: 362px;
+}
+
+.estimate-car {
+  display: flex;
+  height: 681px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #0E1D27;
+}
+.estimate-car .estimate-wrap {
+  margin: 0 auto;
+  width: 1200px;
+  overflow-x: hidden;
+  /* 추가 */
+  justify-content: center;
+  align-items: center;
+}
+.estimate-car .estimate-content {
+  position: absolute;
+  margin: 220px 0 0 40px;
+}
+.estimate-car .estimate-content .estimate-text1 {
+  font-size: 41px;
+  font-weight: 900;
+  color: white;
+  padding: 0 0 25px 0;
+}
+.estimate-car .estimate-content .estimate-text2 {
+  padding: 0 0 50px 0;
+  font-size: 20px;
+  color: #9BA1A5;
+}
+.estimate-car .estimate-content button {
+  font-size: 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 260px;
+  height: 58px;
+}
+.estimate-car .estimate-picture {
+  margin: 160px 0 0 503px;
+}
+.estimate-car .estimate-picture img {
+  width: 660px;
+  height: 420px;
+}
+
+.search-car {
+  display: flex;
+  height: 980px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #F5F5F6;
+}
+.search-car .search-wrap {
+  margin: 0 auto;
+  width: 1200px;
+  overflow-x: hidden;
+  /* 추가 */
+  justify-content: center;
+  align-items: center;
+}
+.search-car .search-wrap .search-text {
+  margin: 150px 0 0 40px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.tab_menu {
+  margin: 35px 0 0 40px;
+}
+
+.tab_menu .list {
+  overflow: hidden;
+}
+
+.tab_menu .list li {
+  float: left;
+  margin-right: 14px;
+}
+
+.tab_menu .list li.is_on .btn {
+  text-decoration: underline;
+  color: black;
+}
+
+.tab_menu .list .btn {
+  color: #82898F;
+  padding: 0 20px 0 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.tab_menu .cont_area {
+  margin-top: 10px;
+}
+
+.tab_menu .cont_area .cont {
+  display: none;
+  background: #555;
+  color: #fff;
+  text-align: center;
+  width: 1200;
+  height: 600px;
+  line-height: 100px;
+}
+
+.main-visual__item .smioer-container {
+  margin: 0 auto;
+}
+.main-visual__item .swiper-pagination-bullet-active {
+  background-color: black;
+}
+
+.swiper-slide img {
+  margin: 165px 0 0 320px;
+  width: 830px;
+  /* 변경 */
+}
+
+.pageBtn {
+  margin: 0 auto;
+  display: flex;
+  width: 74px;
+  height: 1px;
+}
+.pageBtn .swiper-pagination-bullet {
+  width: 10px;
+  /* 변경 */
+  height: 10px;
+  /* 변경 */
+}
+.pageBtn .swiper-pagination {
+  height: 10px;
+  position: static;
+}
+.pageBtn #play-pause-button {
+  margin: 1.2px 0 0 0;
+}
+.pageBtn .swiper-container {
+  overflow: hidden;
+  /* 추가 */
 }/*# sourceMappingURL=main.css.map */

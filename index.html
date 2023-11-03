@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,104 +11,216 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+
     <!-- Font Awesome 추가 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <div class="wrap">
-    <div class="mainWrap">
-        <div class="headerWrap" id="header">
-        <header>
-            <div class="icon" onclick="location.href='index.html'; return true;"></div>
-            <nav>
-                <a href="#">내차팔기</a>
-                <a href="#">내차사기</a>
-                <a href="#">기아 인증중고차 소개</a>
-                <a href="#">공지사항</a>
-                <a href="#">고객센터</a>
-                <a href="#">로그인</a>
-            </nav>
-        </header>
-    </div>
-        <div class="container">
-            <div class="main-visual__item">
+        <div class="wrap2">
+            <div class="mainWrap">
+                <div class="headerWrap" id="header">
+                    <header>
+                        <div class="icon" onclick="location.href='index.html'; return true;"></div>
+                        <nav>
+                            <a href="#">내차팔기</a>
+                            <a href="#">내차사기</a>
+                            <a href="#">기아 인증중고차 소개</a>
+                            <a href="#">공지사항</a>
+                            <a href="#">고객센터</a>
+                            <a href="#">로그인</a>
+                        </nav>
+                    </header>
+                </div>
+                <div class="main-visual__item">
 
 
-                <div class="swiper-container" >
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
 
-                            <img src="https://cpo-cdn.kia.com/public/model/CVEV22SWP_EV6.png" alt="EV6">
-                            <div class="car-introduce">
-                            <p class="carName">
-                                EV6
-                            </p>
-                            <p class="carIntroduce">
-                                고객님을 위한 추천 차량
-                            </p>
-                            
-                            <button class="carCheck">차랑 확인하기</button>
-                        </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://cpo-cdn.kia.com/public/model/GLSD22SWP_K8.png" alt="K8">
-                            <div class="car-introduce">
-                                <p class="carName">
-                                    K8
-                                </p>
-                                <p class="carIntroduce">
-                                    고객님을 위한 추천 차량
-                                </p>
-                                
-                                <button class="carCheck">차랑 확인하기</button>
+                                <img src="https://cpo-cdn.kia.com/public/model/CVEV22SWP_EV6.png" alt="EV6">
+                                <div class="car-introduce">
+                                    <p class="carName">
+                                        EV6
+                                    </p>
+                                    <p class="carIntroduce">
+                                        고객님을 위한 추천 차량
+                                    </p>
+
+                                    <button class="carCheck">차랑 확인하기</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cpo-cdn.kia.com/public/model/GLSD22SWP_K8.png" alt="K8">
+                                <div class="car-introduce">
+                                    <p class="carName">
+                                        K8
+                                    </p>
+                                    <p class="carIntroduce">
+                                        고객님을 위한 추천 차량
+                                    </p>
+
+                                    <button class="carCheck">차랑 확인하기</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://cpo-cdn.kia.com/public/model/MQRV24SWP_SORENTO_PRESTIGE.png"
+                                    alt="쏘렌토">
+                                <div class="car-introduce">
+                                    <p class="carName">
+                                        쏘렌토
+                                    </p>
+                                    <p class="carIntroduce">
+                                        고객님을 위한 추천 차량
+                                    </p>
+
+                                    <button class="carCheck">차랑 확인하기</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="https://cpo-cdn.kia.com/public/model/MQRV24SWP_SORENTO_PRESTIGE.png" alt="쏘렌토">
-                            <div class="car-introduce">
-                                <p class="carName">
-                                    쏘렌토
-                                </p>
-                                <p class="carIntroduce">
-                                    고객님을 위한 추천 차량
-                                </p>
-                                
-                                <button class="carCheck">차랑 확인하기</button>
+
+                        <div class="pageBtn">
+                            <div class="swiper-pagination"></div>
+                            <button id="play-pause-button"><i class="fa fa-pause" id="play-pause-icon"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="recent-car">
+                    <p class="recent-title">최근 조회 차량</p>
+                    <a href="">
+                        <div class="recent-content">
+                            <img src="https://cpo-cdn.kia.com/public/model/SGRV22ABP_NIRO.png" class="car-re">
+                            <p class="text-1">2022 니로</p>
+                            <p class="text-2">SG2니로 하이브리드 시그니처</p>
+                            <p class="text-3">4,864km</p>
+                            <p class="text-4">3,508만원</p>
+                            <div class="recent-heart">
+                                <img src="./dist/asset/resource/img/main/icon/heart-icon.png" class="heart-icon">
+                                <p>9</p>
                             </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="estimate-car">
+                    <div class="estimate-wrap">
+                        <div class="estimate-content">
+                            <p class="estimate-text1">내 기아차 견적 조회</p>
+                            <p class="estimate-text2">단 2개의 정보를 입력하고 예상 견적 확인하기</p>
+                            <button>예상견적 간단 조회하기</button>
+                        </div>
+                        <div class="estimate-picture">
+                            <img src="https://cpo.kia.com/assets/images/@temp/main/@temp-car-quote.png">
                         </div>
                     </div>
 
-                    <div class="pageBtn">
-                    <div class="swiper-pagination"></div>
-                    <button id="play-pause-button"><i class="fa fa-pause" id="play-pause-icon"></i></button>
-                    </div>
-                
                 </div>
+
             </div>
-            <div class="recent-car">
-                <p class="recent-title">최근 조회 차량</p>
-            <a href="">
-                <div class="recent-content">
-                    <img src="https://cpo-cdn.kia.com/public/model/SGRV22ABP_NIRO.png" class="car-re">
-                    <p class="text-1">2022 니로</p>
-                    <p class="text-2">SG2니로 하이브리드 시그니처</p>
-                    <p class="text-3">4,864km</p>
-                    <p class="text-4">3,508만원</p>
-                    <div class="recent-heart">
-                            <img src="./dist/asset/resource/img/main/icon/heart-icon.png" class="heart-icon"><p>9</p>
-                    </div>
-                </div>
-            </a>
-            </div>
-            <div class="estimate-car">
-                
-            </div>
+
         </div>
-        <footer></footer>
+
+
     </div>
-</div>
-<script src="./dist/asset/resource/js/swiper.js"></script>
-<script src="./dist/asset/resource/js/scroll.js"></script>
+    <div class="search-car">
+        <div class="search-wrap">
+            <p class="search-text">차종으로 찾기
+            </p>
+
+
+            <div class="search-container">
+                <div class="tab_menu">
+                    <ul class="list">
+                        <li class="is_on">
+                            <a href="#tab1" class="btn">EV</a>
+                        </li>
+                        <li>
+                            <a href="#tab2" class="btn">승용</a>
+                        </li>
+                        <li>
+                            <a href="#tab3" class="btn">RV</a>
+                        </li>
+                    </ul>
+
+                    <div class="cont_area">
+                        <div id="tab1" class="cont" style="display:block;">
+
+
+                            <div class="main-visual__item">
+
+
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+            
+                                            <img src="https://cpo-cdn.kia.com/public/model/CVEV22SWP_EV6.png" alt="EV6">
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://cpo-cdn.kia.com/public/model/GLSD22SWP_K8.png" alt="K8">
+
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://cpo-cdn.kia.com/public/model/MQRV24SWP_SORENTO_PRESTIGE.png"
+                                                alt="쏘렌토">
+                                        </div>
+                                    </div>
+            
+                                    <div class="pageBtn">
+                                        <div class="swiper-pagination"></div>
+                                        <button id="play-pause-button"><i class="fa fa-pause" id="play-pause-icon"></i></button>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <div id="tab2" class="cont">
+                        </div>
+                        <div id="tab3" class="cont">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div style="height: 10000px;"></div>
+    <footer>asdasdsad</footer>
+    <script src="./dist/asset/resource/js/swiper.js"></script>
+    <script src="./dist/asset/resource/js/scroll.js"></script>
+    <script>
+
+        const tabList = document.querySelectorAll('.tab_menu .list li');
+        const contents = document.querySelectorAll('.tab_menu .cont_area .cont')
+        let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
+
+        for (var i = 0; i < tabList.length; i++) {
+            tabList[i].querySelector('.btn').addEventListener('click', function (e) {
+                e.preventDefault();
+                for (var j = 0; j < tabList.length; j++) {
+                    // 나머지 버튼 클래스 제거
+                    tabList[j].classList.remove('is_on');
+
+                    // 나머지 컨텐츠 display:none 처리
+                    contents[j].style.display = 'none';
+                }
+
+                // 버튼 관련 이벤트
+                this.parentNode.classList.add('is_on');
+
+                // 버튼 클릭시 컨텐츠 전환
+                activeCont = this.getAttribute('href');
+                document.querySelector(activeCont).style.display = 'block';
+            });
+        }
+    </script>
 </body>
+
 </html>
