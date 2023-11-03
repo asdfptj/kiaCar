@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,23 +7,17 @@
 }
 
 #header.scrolled {
-  background: #676A6F;
-}
-#header.scrolled header {
-  background: #676A6F;
+  background-color: rgba(255, 255, 255, 0.288); /* 흰색 배경, 50% 투명도 */
+  z-index: 999;
+  transition: background-color 2s, opacity 2s, -webkit-backdrop-filter 2s;
+  transition: background-color 2s, opacity 2s, backdrop-filter 2s;
+  transition: background-color 2s, opacity 2s, backdrop-filter 2s, -webkit-backdrop-filter 2s; /* 효과 전환 시간 */
 }
 #header.scrolled header .icon {
   background-image: url("/dist/asset/resource/img/common/icon/logo_black.png");
-  padding: 23px 0 0 35px;
-  height: 48px;
-}
-#header.scrolled header nav {
-  padding: 0 0 0 372px;
 }
 #header.scrolled header nav a {
   color: black;
-  font-weight: 900;
-  margin: 0 0 0 25px;
 }
 
 .headerWrap {
@@ -36,21 +31,20 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  background: #1A2129;
   display: flex;
   height: 70px;
   line-height: 70px;
 }
 .headerWrap header .icon {
+  cursor: pointer;
   background-image: url("/dist/asset/resource/img/common/icon/logo_white.png");
+  background-size: 171px 25px;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-top: 20px;
-  width: 100px;
+  margin: 22px 0 0 39px;
+  width: 200px;
 }
 .headerWrap header nav {
-  padding: 0 0 0 372px;
+  padding: 0 0 0 337px;
 }
 .headerWrap header nav a {
   color: white;
