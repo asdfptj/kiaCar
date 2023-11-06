@@ -20,7 +20,7 @@
 .mainWrap {
   margin: 0 auto;
   width: 1200px;
-  overflow-x: hidden;
+  overflow-x: visible;
   /* 추가 */
 }
 
