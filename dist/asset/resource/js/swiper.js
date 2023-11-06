@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('#slider1', {
     speed: 500,
     loop: true,
     autoplay: {
