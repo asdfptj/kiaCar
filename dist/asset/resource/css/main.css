@@ -18,41 +18,37 @@
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, #1A2129 100%, #1A2129 80%);
   /* 추가 */
 }
-
-.main-visual__inner {
+.mainWrap .main-visual__inner {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-.main-visual__item .smioer-container {
+.mainWrap .main-visual__item .swioer-container {
   margin: 0 auto;
 }
-.main-visual__item .swiper-pagination-bullet-active {
+.mainWrap .main-visual__item .swiper-pagination-bullet-active {
   background-color: black;
 }
-
-.swiper-slide img {
+.mainWrap .swiper-slide img {
   margin: 165px 0 0 320px;
   width: 830px;
   /* 변경 */
 }
-
-.car-introduce {
+.mainWrap .car-introduce {
   width: 300px;
   height: 410px;
   margin: -350px 0 0 100px;
 }
-.car-introduce .carName {
+.mainWrap .car-introduce .carName {
   font-size: 50px;
   font-weight: bold;
   color: white;
 }
-.car-introduce .carIntroduce {
+.mainWrap .car-introduce .carIntroduce {
   margin: 20px 0 39px 0;
   font-size: 20px;
   color: #D6D7D9;
 }
-.car-introduce .carCheck {
+.mainWrap .car-introduce .carCheck {
   font-size: 16px;
   width: 210px;
   height: 59px;
@@ -60,31 +56,29 @@
   background: #05141F;
   border-radius: 5px;
 }
-.car-introduce .carCheck:hover {
+.mainWrap .car-introduce .carCheck:hover {
   background: #697279;
 }
-
-.pageBtn {
+.mainWrap .pageBtn {
   margin: 0 auto;
   display: flex;
   width: 74px;
-  height: 1px;
 }
-.pageBtn .swiper-pagination-bullet {
+.mainWrap .pageBtn .swiper-pagination-bullet {
   background: black;
   width: 10px;
   /* 변경 */
   height: 10px;
   /* 변경 */
 }
-.pageBtn .swiper-pagination {
+.mainWrap .pageBtn .swiper-pagination {
   height: 10px;
   position: static;
 }
-.pageBtn #play-pause-button {
+.mainWrap .pageBtn #play-pause-button {
   margin: 1.2px 0 0 0;
 }
-.pageBtn .swiper-container {
+.mainWrap .pageBtn .swiper-container {
   overflow: hidden;
   /* 추가 */
 }
@@ -165,7 +159,7 @@
   margin: 0 auto;
 }
 .estimate-car .estimate-content {
-  margin: 220px 0 0 40px;
+  margin: 220px 0 0 20px;
 }
 .estimate-car .estimate-content .estimate-text1 {
   font-size: 41px;
@@ -200,20 +194,17 @@
   left: 0;
   right: 0;
   background: #F5F5F6;
+  justify-content: center;
 }
 .search-car .search-wrap {
-  margin: 0 auto;
+  margin: 140px 0 0 75px;
   width: 1200px;
+  overflow: hidden;
   /* 추가 */
 }
 .search-car .search-wrap .search-text {
-  margin: 150px 0 0 40px;
   font-size: 33px;
   font-weight: bold;
-}
-
-.tab_menu {
-  margin: 35px 0 0 40px;
 }
 
 .tab_menu .list {
@@ -222,7 +213,7 @@
 
 .tab_menu .list li {
   float: left;
-  margin-right: 14px;
+  margin: 30px 14px 0 0;
 }
 
 .tab_menu .list li.is_on .btn {
@@ -243,7 +234,6 @@
 
 .tab_menu .cont_area .cont {
   display: none;
-  background: #555;
   color: #fff;
   text-align: center;
   width: 1200;
@@ -251,39 +241,48 @@
   line-height: 100px;
 }
 
-.main-visual__item .smioer-container {
+.carKind-slider .main-visual__inner {
+  max-width: 1200px;
   margin: 0 auto;
 }
-.main-visual__item .swiper-pagination-bullet-active {
+.carKind-slider .main-visual__item .swiper-container {
+  margin: 0 auto;
+}
+.carKind-slider .main-visual__item .swiper-pagination-bullet-active {
   background-color: black;
 }
-
-.swiper-slide img {
-  margin: 165px 0 0 320px;
-  width: 830px;
+.carKind-slider .swiper-slide img {
+  width: 430px;
   /* 변경 */
 }
-
-.pageBtn {
+.carKind-slider .pageBtn {
   margin: 0 auto;
   display: flex;
-  width: 74px;
-  height: 1px;
+  width: 110px;
+  height: 102px;
 }
-.pageBtn .swiper-pagination-bullet {
+.carKind-slider .pageBtn .swiper-pagination-bullet {
+  background: black;
   width: 10px;
   /* 변경 */
   height: 10px;
   /* 변경 */
 }
-.pageBtn .swiper-pagination {
+.carKind-slider .pageBtn .swiper-pagination {
   height: 10px;
   position: static;
 }
-.pageBtn #play-pause-button {
+.carKind-slider .pageBtn #play-pause-button {
   margin: 1.2px 0 0 0;
 }
-.pageBtn .swiper-container {
+.carKind-slider .pageBtn .swiper-container {
   overflow: hidden;
   /* 추가 */
+}
+
+.passBtn .pageBtn {
+  margin: 0 auto;
+  display: flex;
+  width: 180px;
+  height: 102px;
 }/*# sourceMappingURL=main.css.map */

@@ -5,12 +5,14 @@
     list-style: none;
     text-decoration: none;
 }
-
+.mainWrap {
+    overflow-x:hidden;
+}
 .header.scrolled {
     background-color: white;
     z-index: 999;
     transition: background-color 2s, opacity 2s, backdrop-filter 2s;
-    header {
+    .header__inner {
         .icon {
             background-image: url('/dist/asset/resource/img/common/icon/logo_black.png');
         }
