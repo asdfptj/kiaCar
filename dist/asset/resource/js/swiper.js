@@ -1,4 +1,23 @@
-var swiper = new Swiper('#slider1', {
+var swiper1 = new Swiper('.main-visual .swiper-container', {
+    speed: 500,
+    loop: true,
+    /*autoplay: {
+        delay: 3000, // 3초 간격
+        disableOnInteraction: false,
+    },*/
+    spaceBetween: 1000, // 슬라이드 간의 간격을 20픽셀로 설정
+    slidesPerView: 1,
+    pagination: {
+        el: '.main-visual .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.main-visual .swiper-button-next',
+        prevEl: '.main-visual .swiper-button-prev',
+    },
+});
+
+var swiper2 = new Swiper('.carKind-slider .swiper-container', {
     speed: 500,
     loop: true,
     autoplay: {
@@ -8,12 +27,12 @@ var swiper = new Swiper('#slider1', {
     spaceBetween: 1000, // 슬라이드 간의 간격을 20픽셀로 설정
     slidesPerView: 1,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.carKind-slider .swiper-pagination',
         clickable: true,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.carKind-slider .swiper-button-next',
+        prevEl: '.carKind-slider .swiper-button-prev',
     },
 });
 
@@ -24,15 +43,15 @@ var icon = document.getElementById('play-pause-icon');
 // 버튼 클릭 이벤트 리스너 추가
 toggleButton.addEventListener('click', function() {
     // 자동 재생 상태 확인
-    if (swiper.autoplay.running) {
+    if (swiper1.autoplay.running) {
         // 자동 재생 중지
-        swiper.autoplay.stop();
+        swiper1.autoplay.stop();
         // 아이콘 변경
         icon.classList.remove('fa-pause');
         icon.classList.add('fa-play');
     } else {
         // 자동 재생 시작
-        swiper.autoplay.start();
+        swiper1.autoplay.start();
         // 아이콘 변경
         icon.classList.remove('fa-play');
         icon.classList.add('fa-pause');

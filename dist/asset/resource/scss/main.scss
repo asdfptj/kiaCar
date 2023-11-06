@@ -8,25 +8,30 @@
 }
 
 .wrap {
-    height: 2360px;
+    width: 100%;
+    height:100vh;
 }
 
-.wrap2 {
-    width: 100%;
-    max-height: 870px;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, #1A2129 65%, #1A2129 100%);
-}
+// .wrap2 {
+//     max-height: 870px;
+// }
 
 .mainWrap {
+    display:block;
     margin: 0 auto;
-    width: 1200px;
     overflow-x: visible;
+    // background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, #1A2129 100%, #1A2129 80%);
     /* 추가 */
 }
 
 
-
+.main-visual{
+    &__inner{
+        max-width:1200px;
+        margin:0 auto;
+    }
+}
 .main-visual__item {
     .smioer-container {
         margin: 0 auto;
@@ -81,6 +86,7 @@
     height: 1px;
 
     .swiper-pagination-bullet {
+        background: black;
         width: 10px;
         /* 변경 */
         height: 10px;
@@ -106,9 +112,16 @@
 
 
 .recent-car {
+    width: 100%;
+    display: inline-block;
     margin: 260px 0 0 40px;
     height: 727px;
 
+
+    &__inner {
+        max-width:1200px;
+        margin:0 auto;
+    }
     .recent-title {
         font-size: 30px;
         font-weight: 600;
@@ -179,24 +192,18 @@
 
 .estimate-car {
     display: flex;
+    width: 100%;
+
     height: 681px;
-    position: absolute;
-    left: 0;
-    right: 0;
+
     background: #0E1D27;
 
     .estimate-wrap {
-        margin: 0 auto;
-        width: 1200px;
-
-        overflow-x: hidden;
-        /* 추가 */
-        justify-content: center;
-        align-items: center;
+            max-width:1200px;
+            margin:0 auto;
     }
 
     .estimate-content {
-        position: absolute;
         margin: 220px 0 0 40px;
 
         .estimate-text {
@@ -225,7 +232,8 @@
     }
 
     .estimate-picture {
-        margin: 160px 0 0 503px;
+        margin: -280px 0 0 503px;
+
 
         img {
             width: 660px;
@@ -237,7 +245,6 @@
 .search-car {
     display: flex;
     height: 980px;
-    position: absolute;
     left: 0;
     right: 0;
     background: #F5F5F6;
@@ -245,10 +252,7 @@
     .search-wrap {
         margin: 0 auto;
         width: 1200px;
-        overflow-x: hidden;
         /* 추가 */
-        justify-content: center;
-        align-items: center;
 
         .search-text {
             margin: 150px 0 0 40px;
