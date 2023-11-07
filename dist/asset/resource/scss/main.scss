@@ -309,23 +309,9 @@
 }
 
 .carKind-slider {
-    .main-visual {
-        &__inner {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-    }
     
-    .main-visual__item {
-        .swiper-container {
-            margin: 0 auto;
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: black;
-        }
-
-    }
+    
+    
 
     .swiper-slide img {
         width: 430px;
@@ -363,12 +349,6 @@
 
     }
 }
-.passBtn {
-    .pageBtn {
-        margin: 0 auto;
-        display: flex;
-        width:180px;
-        height: 102px;
-    }
-}
+
+
 

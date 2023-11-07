@@ -1,10 +1,10 @@
 var swiper1 = new Swiper('.main-visual .swiper-container', {
     speed: 500,
     loop: true,
-    /*autoplay: {
-        delay: 3000, // 3초 간격
-        disableOnInteraction: false,
-    },*/
+autoplay: {
+    delay: 1800, 
+    disableOnInteraction: false,
+ },
     spaceBetween: 1000, // 슬라이드 간의 간격을 20픽셀로 설정
     slidesPerView: 1,
     pagination: {
@@ -18,12 +18,13 @@ var swiper1 = new Swiper('.main-visual .swiper-container', {
 });
 
 var swiper2 = new Swiper('.carKind-slider .swiper-container', {
+    
     slidesPerGroup: 1,
     slidesPerView: 3,
     speed: 500,
     loop: true,
     autoplay: {
-        delay: 3000, // 3초 간격
+        delay: 1300, // 3초 간격
         disableOnInteraction: false,
     },
     spaceBetween: 10, // 슬라이드 간의 간격을 20픽셀로 설정
