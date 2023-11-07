@@ -87,6 +87,29 @@ var swiper4 = new Swiper('.carKind-slider__RV .swiper-container', {
     slidesPerGroup: 1,
 });
 
+var swiper5 = new Swiper('.introduce-wrap .swiper-container', {
+    
+    initialSlide: 1, // 중앙 이미지를 첫 번째로 설정
+  slidesPerView: 3,
+  centeredSlides: true, // 중앙에 위치한 슬라이드를 가로축의 중앙에 위치시킴
+    speed: 500,
+    loop: true,
+    autoplay: {
+        delay: 1300, // 3초 간격
+        disableOnInteraction: true,
+    },
+    spaceBetween: 10, // 슬라이드 간의 간격을 20픽셀로 설정
+    pagination: {
+        el: '.introduce-wrap .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.introduce-wrap .swiper-button-next',
+        prevEl: '.introduce-wrap .swiper-button-prev',
+    },
+    slidesPerGroup: 1,
+});
+
 
 
 // 첫 번째 슬라이더의 버튼 요소와 아이콘 요소 선택

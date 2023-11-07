@@ -551,3 +551,124 @@
     }
 }
 
+.introduce-container {
+    display: flex;
+        width: 100%;
+        height: 846px;
+    .introduce-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    //     .swiper-button-next, .swiper-button-prev {
+    //         background-color: #000;
+    //         border-radius: 50%;
+    //         color: #fff;
+    //         font-size: 18px;
+    //         height: 36px;
+    //         line-height: 36px;
+    //         text-align: center;
+    //         width: 36px;
+    //         opacity: 1;
+    //         transition: opacity 0.3s;
+    //       }
+          
+    //       /* 버튼 숨김 */
+    //       .swiper-button-disabled {
+    //         opacity: 0;
+    //         display: none;
+    //       }
+          
+    //       /* 페이지네이션 스타일 */
+    //       .swiper-pagination-bullet {
+    //         background-color: #000;
+    //         width: 12px;
+    //         height: 12px;
+    //       }
+    // }
+    // .news-wrap {
+    //     height: 353.38px;
+
+    }
+}
+footer {
+    height: 485px;
+    background: #05141F;
+}
+.introduce-wrap {
+
+    .swiper-wrapper {
+        height: 500px;
+        
+        
+    }
+    
+    .swiper-slide {
+        transition: transform 0.5s;
+      }
+      
+      .swiper-slide {
+        color: black;
+      }
+      .swiper-text__hidden {
+        display: none;
+      }
+      .swiper-bold {
+        margin: 150px 0 0 0;
+        color: #505B62;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .swiper-slide-active .swiper-bold{
+        margin:  20px 0 60px 0;
+        color: black;
+        font-weight: 700;
+        font-weight: 700px;
+        font-size: 37px;
+      }
+
+      .swiper-slide-active .EV-center {
+        width: 507px;
+        margin: -45px 0 0 -50px ;
+      }
+      
+
+      .swiper-slide-active .swiper-text__hidden {
+        margin: -115px 0 49px 0;
+        display: block;
+      }
+    
+    .swiper-slide img {
+        width: 269.5px;
+        /* 변경 */
+    }
+
+    .pageBtn {
+        margin: 0 auto;
+        display: flex;
+        width:180px;
+        height: 102px;
+        .swiper-pagination-bullet {
+            background: black;
+            width: 10px;
+            /* 변경 */
+            height: 10px;
+            /* 변경 */
+        }
+
+        .swiper-pagination {
+            height: 10px;
+            position: static;
+        }
+
+        #play-pause-button {
+            margin: 1.2px 0 0 0;
+        }
+
+        .swiper-container {
+            overflow: hidden;
+            /* 추가 */
+        }
+
+
+    }
+}

@@ -428,4 +428,81 @@
 .carKind-slider__RV .pageBtn .swiper-container {
   overflow: hidden;
   /* 추가 */
+}
+
+.introduce-container {
+  display: flex;
+  width: 100%;
+  height: 846px;
+}
+.introduce-container .introduce-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  height: 485px;
+  background: #05141F;
+}
+
+.introduce-wrap .swiper-wrapper {
+  height: 500px;
+}
+.introduce-wrap .swiper-slide {
+  transition: transform 0.5s;
+}
+.introduce-wrap .swiper-slide {
+  color: black;
+}
+.introduce-wrap .swiper-text__hidden {
+  display: none;
+}
+.introduce-wrap .swiper-bold {
+  margin: 150px 0 0 0;
+  color: #505B62;
+  font-weight: 600;
+  font-size: 20px;
+}
+.introduce-wrap .swiper-slide-active .swiper-bold {
+  margin: 20px 0 60px 0;
+  color: black;
+  font-weight: 700;
+  font-weight: 700px;
+  font-size: 37px;
+}
+.introduce-wrap .swiper-slide-active .EV-center {
+  width: 507px;
+  margin: -45px 0 0 -50px;
+}
+.introduce-wrap .swiper-slide-active .swiper-text__hidden {
+  margin: -115px 0 49px 0;
+  display: block;
+}
+.introduce-wrap .swiper-slide img {
+  width: 269.5px;
+  /* 변경 */
+}
+.introduce-wrap .pageBtn {
+  margin: 0 auto;
+  display: flex;
+  width: 180px;
+  height: 102px;
+}
+.introduce-wrap .pageBtn .swiper-pagination-bullet {
+  background: black;
+  width: 10px;
+  /* 변경 */
+  height: 10px;
+  /* 변경 */
+}
+.introduce-wrap .pageBtn .swiper-pagination {
+  height: 10px;
+  position: static;
+}
+.introduce-wrap .pageBtn #play-pause-button {
+  margin: 1.2px 0 0 0;
+}
+.introduce-wrap .pageBtn .swiper-container {
+  overflow: hidden;
+  /* 추가 */
 }/*# sourceMappingURL=main.css.map */
