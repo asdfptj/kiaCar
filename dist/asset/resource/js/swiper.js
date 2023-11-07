@@ -19,13 +19,15 @@ autoplay: {
 
 var swiper2 = new Swiper('.carKind-slider .swiper-container', {
     
-    slidesPerGroup: 1,
+    initialSlide: 1, // 중앙 이미지를 첫 번째로 설정
+  slidesPerView: 3,
+  centeredSlides: true, // 중앙에 위치한 슬라이드를 가로축의 중앙에 위치시킴
     slidesPerView: 3,
     speed: 500,
     loop: true,
     autoplay: {
         delay: 1300, // 3초 간격
-        disableOnInteraction: false,
+        disableOnInteraction: true,
     },
     spaceBetween: 10, // 슬라이드 간의 간격을 20픽셀로 설정
     pagination: {
@@ -38,6 +40,8 @@ var swiper2 = new Swiper('.carKind-slider .swiper-container', {
     },
     slidesPerGroup: 1,
 });
+
+
 
 // 첫 번째 슬라이더의 버튼 요소와 아이콘 요소 선택
 var toggleButton1 = document.getElementById('play-pause-button');
@@ -82,4 +86,3 @@ toggleButton2.addEventListener('click', function() {
         icon2.classList.add('fa-pause');
     }
 });
-

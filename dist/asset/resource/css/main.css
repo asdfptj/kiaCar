@@ -197,7 +197,7 @@
   justify-content: center;
 }
 .search-car .search-wrap {
-  margin: 140px 0 0 75px;
+  margin: 140px 0 0 150px;
   width: 1200px;
   overflow: hidden;
   /* 추가 */
@@ -241,8 +241,41 @@
   line-height: 100px;
 }
 
+.carKind-slider .swiper-wrapper {
+  height: 500px;
+}
+.carKind-slider .swiper-slide {
+  transition: transform 0.5s;
+}
+.carKind-slider .swiper-slide {
+  color: black;
+}
+.carKind-slider .swiper-text__hidden {
+  display: none;
+}
+.carKind-slider .swiper-bold {
+  margin: 150px 0 0 0;
+  color: #505B62;
+  font-weight: 600;
+  font-size: 20px;
+}
+.carKind-slider .swiper-slide-active .swiper-bold {
+  margin: 20px 0 60px 0;
+  color: black;
+  font-weight: 700;
+  font-weight: 700px;
+  font-size: 37px;
+}
+.carKind-slider .swiper-slide-active .EV-center {
+  width: 507px;
+  margin: -45px 0 0 -50px;
+}
+.carKind-slider .swiper-slide-active .swiper-text__hidden {
+  margin: -115px 0 49px 0;
+  display: block;
+}
 .carKind-slider .swiper-slide img {
-  width: 430px;
+  width: 269.5px;
   /* 변경 */
 }
 .carKind-slider .pageBtn {
