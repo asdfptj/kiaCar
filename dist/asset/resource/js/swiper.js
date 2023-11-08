@@ -1,6 +1,6 @@
 var swiper1 = new Swiper('.main-visual .swiper-container', {
     speed: 500,
-    loop: true,
+    loop: false,
 autoplay: {
     delay: 1800, 
     disableOnInteraction: false,
@@ -65,6 +65,8 @@ var swiper3 = new Swiper('.carKind-slider__pass .swiper-container', {
 });
 
 var swiper4 = new Swiper('.carKind-slider__RV .swiper-container', {
+    shortSwipes: false,
+  longSwipes: false,
     
     initialSlide: 1, // 중앙 이미지를 첫 번째로 설정
   slidesPerView: 3,
@@ -89,16 +91,10 @@ var swiper4 = new Swiper('.carKind-slider__RV .swiper-container', {
 
 var swiper5 = new Swiper('.introduce-wrap .swiper-container', {
     
-    initialSlide: 1, // 중앙 이미지를 첫 번째로 설정
-  slidesPerView: 3,
+  slidesPerView: 1,
   centeredSlides: true, // 중앙에 위치한 슬라이드를 가로축의 중앙에 위치시킴
     speed: 500,
-    loop: true,
-    autoplay: {
-        delay: 1300, // 3초 간격
-        disableOnInteraction: true,
-    },
-    spaceBetween: 10, // 슬라이드 간의 간격을 20픽셀로 설정
+    loop: false,
     pagination: {
         el: '.introduce-wrap .swiper-pagination',
         clickable: true,
@@ -109,6 +105,33 @@ var swiper5 = new Swiper('.introduce-wrap .swiper-container', {
     },
     slidesPerGroup: 1,
 });
+
+swiper5.on('slideChange', function () {
+    updateButtons();
+  });
+  
+  // 초기 버튼 상태 설정
+  updateButtons();
+  
+  function updateButtons() {
+    var totalSlides = swiper5.slides.length;
+    var currentSlide = swiper5.activeIndex;
+    if (currentSlide === 0) {
+      document.querySelector('.introduce-wrap .swiper-button-prev').style.opacity = '0';
+      document.querySelector('.introduce-wrap .swiper-button-prev').style.pointerEvents = 'none';
+    } else {
+      document.querySelector('.introduce-wrap .swiper-button-prev').style.opacity = '1';
+      document.querySelector('.introduce-wrap .swiper-button-prev').style.pointerEvents = 'auto';
+    }
+    if (currentSlide === totalSlides - swiper5.params.slidesPerView) {
+      document.querySelector('.introduce-wrap .swiper-button-next').style.opacity = '0';
+      document.querySelector('.introduce-wrap .swiper-button-next').style.pointerEvents = 'none';
+    } else {
+      document.querySelector('.introduce-wrap .swiper-button-next').style.opacity = '1';
+      document.querySelector('.introduce-wrap .swiper-button-next').style.pointerEvents = 'auto';
+    }
+  }
+
 
 
 
