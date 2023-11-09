@@ -708,4 +708,25 @@ footer .footer-wrap .footer-menu .botton-text .bottom-right {
 }
 footer .footer-wrap .footer-menu .botton-text .bottom-right .footer-use {
   margin: 0 0 0 30px;
+}
+
+.event-ing {
+  margin: 0 0 0 80px;
+  height: 680px;
+  background: #fff;
+}
+.event-ing .event-wrap {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.event-ing .event-wrap .event-title {
+  display: flex;
+  margin: 163px 0 38px 0;
+  font-size: 33px;
+  font-weight: 900;
+}
+.event-ing .event-wrap .event-image {
+  margin: 0 auto;
+  width: 1130px;
+  height: 371px;
 }/*# sourceMappingURL=main.css.map */

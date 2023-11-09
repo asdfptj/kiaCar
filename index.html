@@ -133,6 +133,15 @@
                 </div>
             </scetion>
             <!--estimate-->
+            <section class="event-ing">
+                <div class="event-wrap">
+                    <p class="event-title">진행중인 이벤트</p>
+                    <div class="event-container">
+                        <img src="https://cpo-cdn.kia.com/public/resource/kia-cpo-fo-web/images/main/signup_event_pc.png" class="event-image">
+                    </div>
+                </div>
+            </section>
+            <!-- event -->
             <section class="search-car">
                 <div class="search-wrap">
                     <p class="search-text">차종으로 찾기
@@ -556,7 +565,8 @@
                     <!--search-car-->
                 </div>
             </section>
-            <div class="introduce">
+            <!-- search-car -->
+            <section class="introduce">
                 <div class="introduce-container">
 
                     <div class="introduce-wrap">
@@ -644,8 +654,9 @@
 
 
 
-            </div>
-            <div class="news-container">
+            </section>
+            <!-- introduce -->
+            <section class="news-container">
                 <div class="news-menu">
                     <div class="news-textwrap">
                         <p class="news-text">News</p>
@@ -696,7 +707,8 @@
 
 
 
-            </div>
+            </section>
+            <!-- news-container -->
             <footer>
                 <div class="footer-wrap">
                     <div class="footer-menu">
@@ -704,9 +716,12 @@
                                     class="footer-icon"></span></a>
 
                         <div class="social-image">
-                            <a href=""><span><img src="https://cpo.kia.com/assets/images/svg/icon_facebook.svg" alt="페이스북"></span></a>
-                            <a href=""><span><img src="https://cpo.kia.com/assets/images/svg/icon_instagram.svg" alt="인스타그램"></span></a>
-                            <a href=""><span><img src="https://cpo.kia.com/assets/images/svg/icon_youtube.svg" alt="유튜브"></span></a>
+                            <a href=""><span><img src="https://cpo.kia.com/assets/images/svg/icon_facebook.svg"
+                                        alt="페이스북"></span></a>
+                            <a href=""><span><img src="https://cpo.kia.com/assets/images/svg/icon_instagram.svg"
+                                        alt="인스타그램"></span></a>
+                            <a href=""><span><img src="https://cpo.kia.com/assets/images/svg/icon_youtube.svg"
+                                        alt="유튜브"></span></a>
                         </div>
                         <nav>
                             <a href="#">내차팔기</a>
@@ -718,12 +733,12 @@
 
                         <div class="selectbar">
                             <select class="bar">
-                                <option >기아</option>
-                                <option >현대자동차그룹</option>
-                                <option >브랜드</option>
-                                <option >기아멤버스</option>
-                                <option >프라이버시 센터</option>
-                                <option >Kia Connect</option>
+                                <option>기아</option>
+                                <option>현대자동차그룹</option>
+                                <option>브랜드</option>
+                                <option>기아멤버스</option>
+                                <option>프라이버시 센터</option>
+                                <option>Kia Connect</option>
                                 <option selected>Family Site</option>
                             </select>
                         </div>
@@ -739,39 +754,14 @@
                             </div>
                         </div>
 
-                    </div>  
+                    </div>
                 </div>
             </footer>
         </div>
     </div>
     <script src="./dist/asset/resource/js/swiper.js"></script>
     <script src="./dist/asset/resource/js/scroll.js"></script>
-    <script>
-
-        const tabList = document.querySelectorAll('.tab_menu .list li');
-        const contents = document.querySelectorAll('.tab_menu .cont_area .cont')
-        let activeCont = ''; // 현재 활성화 된 컨텐츠 (기본:#tab1 활성화)
-
-        for (var i = 0; i < tabList.length; i++) {
-            tabList[i].querySelector('.btn').addEventListener('click', function (e) {
-                e.preventDefault();
-                for (var j = 0; j < tabList.length; j++) {
-                    // 나머지 버튼 클래스 제거
-                    tabList[j].classList.remove('is_on');
-
-                    // 나머지 컨텐츠 display:none 처리
-                    contents[j].style.display = 'none';
-                }
-
-                // 버튼 관련 이벤트
-                this.parentNode.classList.add('is_on');
-
-                // 버튼 클릭시 컨텐츠 전환
-                activeCont = this.getAttribute('href');
-                document.querySelector(activeCont).style.display = 'block';
-            });
-        }
-    </script>
+    <script src="./dist/asset/resource/js/tab.js"></script>
 </body>
 
 </html>
