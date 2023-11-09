@@ -65,8 +65,6 @@ var swiper3 = new Swiper('.carKind-slider__pass .swiper-container', {
 });
 
 var swiper4 = new Swiper('.carKind-slider__RV .swiper-container', {
-    shortSwipes: false,
-  longSwipes: false,
     
     initialSlide: 1, // 중앙 이미지를 첫 번째로 설정
   slidesPerView: 3,
