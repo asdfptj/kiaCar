@@ -877,8 +877,15 @@ footer {
                 .bottom-right {
                     display: flex;
                     margin: 40px 0 0 0;
-                    .footer-use {
-                        margin: 0 0 0 30px;
+                    a{
+                        color: #697279;
+                        .footer- {
+                            &use {
+                                margin: 0 0 0 30px;
+                            }
+                           
+                            
+                        }
                     }
                 }
             }

@@ -706,7 +706,10 @@ footer .footer-wrap .footer-menu .botton-text .bottom-right {
   display: flex;
   margin: 40px 0 0 0;
 }
-footer .footer-wrap .footer-menu .botton-text .bottom-right .footer-use {
+footer .footer-wrap .footer-menu .botton-text .bottom-right a {
+  color: #697279;
+}
+footer .footer-wrap .footer-menu .botton-text .bottom-right a .footer-use {
   margin: 0 0 0 30px;
 }
 
