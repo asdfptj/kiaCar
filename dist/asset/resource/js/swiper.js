@@ -94,7 +94,7 @@ var swiper5 = new Swiper('.introduce-wrap .swiper-container', {
   slidesPerView: 1,
   centeredSlides: true, // 중앙에 위치한 슬라이드를 가로축의 중앙에 위치시킴
     speed: 500,
-    loop: true,
+    loop: false,
     pagination: {
         el: '.introduce-wrap .swiper-pagination',
         clickable: true,
